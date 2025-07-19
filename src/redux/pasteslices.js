@@ -42,6 +42,7 @@ const pasteslices = createSlice(
             resetPaste:(state)=>{
                 if(state.pastes.length>0) {
                 state.pastes=[]
+                localStorage.setItem("pastes",JSON.stringify(state.pastes))
                 toast.success("all pastes deleted")
                 } else {
                     toast.error("no paste available to delete")
