@@ -17,7 +17,7 @@ const Viewpaste = () => {
 
   return (
     <div>
-      <div className="mt-10 flex flex-col">
+      <div className="mt-10 flex flex-col relative">
         {" "}
         <div className="flex justify-center items-center">
           <h2 className="text-center p-5 text-4xl font-extrabold">
@@ -42,15 +42,19 @@ const Viewpaste = () => {
                 {pasteid?"update paste":"create paste"}
             </button> */}
         </div>
-        <div className="flex justify-center w-screen mt-10">
+        <div className="flex justify-center w-screen mt-10 pb-16">
           <textarea
             name="content"
             placeholder="enter content here..."
             value={paste.content}
             rows={20}
             disabled
-            className="bg-transparent w-[80%] border rounded-md focus:outline-none pl-5 py-3 cursor-not-allowed"
+            className="bg-transparent w-[80%] border rounded-md focus:outline-none pl-5 py-3 cursor-not-allowed mb-10"
           ></textarea>
+        </div>
+        <div className='absolute bottom-0 text-white text-center w-full pb-2'>
+            <p>Developed by Aayushman Mukherjee</p>
+            <p><a href="http:/https://github.com/aayushmanmukherjee" target="_blank" className='hover:underline'>Github</a></p>
         </div>
       </div>
     </div>

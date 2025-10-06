@@ -24,8 +24,8 @@ const Paste = () => {
   );
   if (paste.length > 0) {
     return (
-      <div className="mt-6 flex justify-center w-full">
-        <div className="flex flex-col w-full items-center">
+      <div className="mt-6 flex justify-center w-full relative">
+        <div className="flex flex-col w-full items-center pb-16">
           <div className="mt-2 mb-16 flex flex-col items-center justify-center gap-4 w-full">
             <div className="flex justify-center items-center border rounded-md p-2  hover:bg-gray-700 hover:scale-110 transition-all duration-200">
               <button onClick={deleteAll} className="text-xl p-1 text-red-500">
@@ -92,12 +92,16 @@ const Paste = () => {
               : ""}
           </div>
         </div>
+        <div className='absolute bottom-0 text-white text-center w-full pb-2'>
+            <p>Developed by Aayushman Mukherjee</p>
+            <p><a href="http:/https://github.com/aayushmanmukherjee" target="_blank" className='hover:underline'>Github</a></p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="mt-6 flex justify-center w-full">
+    <div className="mt-6 flex justify-center w-full relative">
       <div className="flex flex-col w-full items-center">
         <div className="mt-2 mb-16 flex flex-col items-center justify-center gap-4 w-full">
           <div className="flex justify-center items-center border rounded-md p-2  hover:bg-gray-700 hover:scale-110 transition-all duration-200">
@@ -161,6 +165,10 @@ const Paste = () => {
             : ""}
         </div>
       </div>
+      <div className='fixed bottom-0 text-white text-center w-full pb-2'>
+            <p>Developed by Aayushman Mukherjee</p>
+            <p><a href="http:/https://github.com/aayushmanmukherjee" target="_blank" className='hover:underline'>Github</a></p>
+        </div>
     </div>
   );
 };
