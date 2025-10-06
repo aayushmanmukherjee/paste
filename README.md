@@ -15,4 +15,4 @@ Use this page to -
 - All the notes can be deleted at once using `delete all pastes` button.
 - Search notes using the title of the note.
 # **Website link**
-[Try Paste](https://paste-henna.vercel.app/)
+[Try Paste](https://paste-henna.vercel.app)
