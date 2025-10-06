@@ -9,6 +9,8 @@ Use this page to create a note by adding a title and filling in the content, the
 ## Pastes Page
 ![Pastes Page](./demo-assets/2.png)
 Use this page to - 
-- View existing notes using <img src='./src/assets/view.png' width='6px' height='6px'/>.
-- Update existing notes.
-- 
+- View existing notes using <img src='./src/assets/view.png' width='12px' height='12px'/> button.
+- Update existing notes using <img src='./src/assets/edit.png' width='12px' height='12px'/> button.
+- Delete existing notes using <img src='./src/assets/delete.png' width='12px' height='12px'/> button.
+- All the notes can be deleted at once using `delete all pastes` button.
+- Search notes using the title of the note.
